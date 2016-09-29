@@ -21,7 +21,7 @@ public class Main_Class {
         }
 
         Scanner scan = new Scanner(System.in);
-        Menu menuItem = new Menu("Media Library.", scan);
+        Menu menuItem = new Menu("Number Plate Auction.", scan);
         menuItem.addOption("Display all the registrations available.");
         menuItem.addOption("Display filtered registrations available.");
         menuItem.addOption("Add a registration and guide price.");
