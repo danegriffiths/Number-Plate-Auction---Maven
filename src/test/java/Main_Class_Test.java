@@ -1,6 +1,4 @@
 import org.junit.*;
-
-
 import java.sql.*;
 
 /**
@@ -44,7 +42,7 @@ public class Main_Class_Test {
     }
 
     @Test
-    public void showFilteredPlatesWithPrice() throws Exception {
+    public void showFilteredPlateWithPrice() throws Exception {
 
         Statement sqlStmnt = conn.createStatement();
         String sqlText = "SELECT " +

@@ -164,8 +164,13 @@ public class Main_Class {
         sqlText.setString(1,category);
         sqlText.setString(2,registration);
         sqlText.setInt(3,price);
-        sqlText.execute();
-        System.out.println("Registration successfully added to the auction.");
+
+        try {
+            sqlText.execute();
+            System.out.println("Registration successfully added to the auction.");
+        } catch (SQLException ex) {
+            System.out.println("Number plate already in database.");
+        }
     }
 
     /**
